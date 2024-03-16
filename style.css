@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #09090A;
+    --bg-input-color: #202024;
+    --base-color: #c4c4cc;
+    --title-color: #fff;
+    --gradient-color: linear-gradient(90deg, #996dff 0%, #c7afff 100%)
+}
+
+body {
+    background-image: url("./assets/BG.png");
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    background-color: var(--bg-color);
+}
+
+body,
+html,
+input {
+    font-family: "Roboto", sans-serif;
+}
+
+.page {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    margin: 16rem 0;
+    max-width: 50rem;
+}
+
+main span {
+    text-transform: uppercase;
+    font-size: 1, 6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: 0.16rem;
+
+    background-image: var(--gradient-color);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+main h1 {
+    margin-top: 1.6rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    color: var(--title-color);
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: var(--base-color);
+    margin: 3.2rem 0;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+main form {
+    display: flex;
+    gap: 1.2rem;
+}
+
+main form input {
+    width: 29rem;
+    height: 5.8rem;
+    background-color: var(--bg-input-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    color: var(--base-color);
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    color: var(--base-color);
+}
+
+main form button {
+    border: none;
+    width: 17.5rem;
+    border-radius: 0.5rem;
+    background-image: var(--gradient-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    color: var(--title-color);
+    justify-content: space-between;
+}
+
+footer div {
+    max-width: 27.4rem;
+}
+
+footer div p:first-of-type {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1.6rem 0 0.8rem;
+    line-height: 2.8rem;
+}
+
+footer div p {
+    font-size: 1.4rem;
+    color: var(--base-color);
+}
